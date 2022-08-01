@@ -1,0 +1,25 @@
+[29-Nov-2021 08:32:18 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID 'GWT+8' is invalid in D:\Dev\Webcode\TitanCRA\Application\bootstrap\app.php on line 9
+[29-Nov-2021 08:32:21 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID 'GWT+8' is invalid in D:\Dev\Webcode\TitanCRA\Application\bootstrap\app.php on line 9
+[29-Nov-2021 08:32:58 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID 'GWT+8' is invalid in D:\Dev\Webcode\TitanCRA\Application\bootstrap\app.php on line 9
+[29-Nov-2021 08:32:58 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID 'GWT+8' is invalid in D:\Dev\Webcode\TitanCRA\Application\bootstrap\app.php on line 9
+[29-Nov-2021 08:33:47 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID 'GWT+8' is invalid in D:\Dev\Webcode\TitanCRA\Application\bootstrap\app.php on line 9
+[29-Nov-2021 08:33:47 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID 'GWT+8' is invalid in D:\Dev\Webcode\TitanCRA\Application\bootstrap\app.php on line 9
+[01-Apr-2022 09:56:22 UTC] PHP Warning:  require_once(D:\Dev\Webcode\Me\backend\bootstrap/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Dev\Webcode\Me\backend\bootstrap\app.php on line 3
+[01-Apr-2022 09:56:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Dev\Webcode\Me\backend\bootstrap/../vendor/autoload.php' (include_path='.;C:\php\pear') in D:\Dev\Webcode\Me\backend\bootstrap\app.php:3
+Stack trace:
+#0 D:\Dev\Webcode\Me\backend\public\index.php(15): require()
+#1 {main}
+  thrown in D:\Dev\Webcode\Me\backend\bootstrap\app.php on line 3
+[01-Apr-2022 09:56:33 UTC] PHP Warning:  require_once(D:\Dev\Webcode\Me\backend\bootstrap/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Dev\Webcode\Me\backend\bootstrap\app.php on line 3
+[01-Apr-2022 09:56:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Dev\Webcode\Me\backend\bootstrap/../vendor/autoload.php' (include_path='.;C:\php\pear') in D:\Dev\Webcode\Me\backend\bootstrap\app.php:3
+Stack trace:
+#0 D:\Dev\Webcode\Me\backend\public\index.php(15): require()
+#1 {main}
+  thrown in D:\Dev\Webcode\Me\backend\bootstrap\app.php on line 3
+[01-Apr-2022 09:56:33 UTC] PHP Warning:  require_once(D:\Dev\Webcode\Me\backend\bootstrap/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Dev\Webcode\Me\backend\bootstrap\app.php on line 3
+[01-Apr-2022 09:56:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Dev\Webcode\Me\backend\bootstrap/../vendor/autoload.php' (include_path='.;C:\php\pear') in D:\Dev\Webcode\Me\backend\bootstrap\app.php:3
+Stack trace:
+#0 D:\Dev\Webcode\Me\backend\public\index.php(15): require()
+#1 {main}
+  thrown in D:\Dev\Webcode\Me\backend\bootstrap\app.php on line 3
+[06-May-2022 08:50:48 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in D:\Dev\Webcode\Me\backend\vendor\yajra\laravel-pdo-via-oci8\src\Pdo\Oci8\Statement.php on line 699

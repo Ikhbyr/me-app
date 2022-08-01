@@ -1,0 +1,58 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Contracts\Auth\Factory as Auth;
+
+class CheckPermMiddleware
+{
+    /**
+     * The authentication guard factory instance.
+     *
+     * @var \Illuminate\Contracts\Auth\Factory
+     */
+    protected $auth;
+
+    /**
+     * Create a new middleware instance.
+     *
+     * @param  \Illuminate\Contracts\Auth\Factory  $auth
+     * @return void
+     */
+    public function __construct(Auth $auth)
+    {
+        $this->auth = $auth;
+    }
+
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @param  string|null  $guard
+     * @return mixed
+     */
+    public function handle($request, Closure $next, $permid = null)
+    {
+        if ($permid === null || $permid === "") {
+            return $next($request);
+        }
+
+        $perms = explode(".", $permid);
+        $permitted = false;
+        $user = auth()->user();
+
+        foreach ($perms as $perm) {
+            $permitted = $user->checkPerm($perm);
+            if ($permitted) {
+                break;
+            }
+        }
+        if ($permitted) {
+            return $next($request);
+        }
+
+        return response("Permission [" . implode(", ", $perms) . "] is denied!", 403);
+    }
+}
